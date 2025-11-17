@@ -474,7 +474,8 @@ ${renewHTML}<div class="fn__hr--b"></div>`;
         }
     },
     onSetaccount() {
-        if (repos.element) {
+        // BY CPoet 20251117 移出用户信息显示
+        /* if (repos.element) {
             repos.element.innerHTML = "";
         }
         if (window.siyuan.config.system.container === "ios") {
@@ -506,6 +507,6 @@ ${renewHTML}<div class="fn__hr--b"></div>`;
                 html += `<div class="toolbar__item ariaLabel" aria-label="${item.name}：${item.desc}">${item.icon}</div>`;
             });
         }
-        document.getElementById("toolbarVIP").innerHTML = html;
+        document.getElementById("toolbarVIP").innerHTML = html; */
     }
 };

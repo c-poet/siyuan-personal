@@ -19,5 +19,7 @@ export const needSubscribe = (tip = window.siyuan.languages._kernel[29]) => {
 };
 
 export const isPaidUser = () => {
-    return window.siyuan.user && (0 === window.siyuan.user.userSiYuanSubscriptionStatus || 1 === window.siyuan.user.userSiYuanOneTimePayStatus);
+    // BY CPoet 20251117 个人使用，移出登录和订阅判断
+    // return window.siyuan.user && (0 === window.siyuan.user.userSiYuanSubscriptionStatus || 1 === window.siyuan.user.userSiYuanOneTimePayStatus);
+    return true;
 };
